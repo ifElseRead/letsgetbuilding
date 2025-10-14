@@ -11,6 +11,7 @@ body {
   flex-direction: column;
   min-height: 100vh;
   font-family: Arial, sans-serif;
+  min-width: 320px;
 }
 
 /* HEADER SECTION */
@@ -29,6 +30,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 
 /* Hide the checkbox */
@@ -42,6 +44,10 @@ nav {
   flex-direction: column;
   background: #333;
   padding: 1em;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
 }
 
 .menu a {
@@ -70,13 +76,17 @@ nav {
   .hamburger {
     display: none;
   }
+
   .menu {
     display: flex;
+    position: static; /* rejoin normal layout */
     flex-direction: row;
     background: none;
+    padding: 0;
   }
+
   .menu a {
-    color: black;
+    color: white;
     padding: 0 1em;
   }
 }
