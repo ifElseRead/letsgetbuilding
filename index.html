@@ -4,14 +4,30 @@
     <!-- Meta data -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
     <!-- Title of the website -->
     <title>Document</title>
   </head>
   <body>
     <header>
-      <nav>NavBAr</nav>
+      <nav>
+        <!-- Toggle for the responsive menu using a checkbox status of Checked or not. 
+         The checkbox is hidden but its state is used to control the menu visibility -->
+        <span id="logo">Lets Get Building!</span>
+
+        <!-- Checkbox toggle menu only for small screens -->
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="hamburger">☰</label>
+        <!-- Menu links -->
+        <div class="menu">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Contact</a>
+        </div>
+      </nav>
     </header>
+
     <main>Main</main>
     <footer>Footer</footer>
   </body>

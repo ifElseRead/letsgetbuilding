@@ -1,0 +1,93 @@
+/* BASE STYLES */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+/* HEADER SECTION */
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 0.4rem;
+}
+
+/* NAVIGATION  */
+nav {
+  background-color: #555;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Hide the checkbox */
+#menu-toggle {
+  display: none;
+}
+
+/* Base menu styles */
+.menu {
+  display: none;
+  flex-direction: column;
+  background: #333;
+  padding: 1em;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5em 0;
+}
+
+/* Hamburger icon styles */
+.hamburger {
+  font-size: 2em;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0.5em;
+  background: #333;
+  color: white;
+}
+
+/* When checkbox is checked, show menu */
+#menu-toggle:checked + .hamburger + .menu {
+  display: flex;
+}
+
+/* For larger screens, show menu normally */
+@media (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+  .menu {
+    display: flex;
+    flex-direction: row;
+    background: none;
+  }
+  .menu a {
+    color: black;
+    padding: 0 1em;
+  }
+}
+
+/* MAIN BODY OF CONTENT */
+main {
+  /* background-color: red; */
+  flex: 1;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+}
