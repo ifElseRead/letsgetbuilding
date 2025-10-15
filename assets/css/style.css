@@ -1,3 +1,11 @@
+/* VARIABLES */
+
+:root {
+  --primary-color: #ff6b35;
+  --secondary-color: #f4f4f4;
+  --font-color: #333;
+  --header-height: 60px;
+}
 /* BASE STYLES */
 
 * {
@@ -12,25 +20,34 @@ body {
   min-height: 100vh;
   font-family: Arial, sans-serif;
   min-width: 320px;
+  /* padding: 0 0.4rem; */
 }
 
 /* HEADER SECTION */
 
 header {
-  background-color: #333;
+  /* background-color: #333; */
   color: white;
-  padding: 0.4rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: "Courier New", Courier, monospace;
+  /* color: ; */
 }
 
 /* NAVIGATION  */
 nav {
-  background-color: #555;
+  background-color: #3a3a3a;
   color: white;
-  padding: 1rem;
+  padding: 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: relative;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
 }
 
 /* Hide the checkbox */
@@ -50,10 +67,30 @@ nav {
   right: 0;
 }
 
-.menu a {
+.menu a,
+.btn-nav-primary {
+  /* Inherit existing styles */
   color: white;
   text-decoration: none;
-  padding: 0.5em 0;
+  padding: 1em 0;
+
+  /* Set initial opacity for the transition */
+  opacity: 1;
+
+  /* Add a quick, subtle transition for smoothness */
+  transition: opacity 0.2s ease-in-out, border-bottom 0.2s ease-in-out;
+
+  /* Add a transparent border at the bottom so the hover doesn't jump the text */
+  border-bottom: 2px solid transparent;
+}
+
+.menu a:hover,
+.btn-nav-primary:hover {
+  /* 🤏 Subtle Change 1: Reduce opacity slightly */
+  opacity: 0.85;
+
+  /* 🤏 Subtle Change 2: Show a thin, quick-appearing bottom border */
+  border-bottom: 2px solid var(--primary-color, #4caf50);
 }
 
 /* Hamburger icon styles */
@@ -63,7 +100,7 @@ nav {
   display: inline-block;
   padding: 0.5em;
   background: #333;
-  color: white;
+  color: var(--primary-color);
 }
 
 /* When checkbox is checked, show menu */
@@ -71,33 +108,63 @@ nav {
   display: flex;
 }
 
-/* For larger screens, show menu normally */
+/* MAIN BODY OF CONTENT */
+main {
+  flex: 1;
+}
+
+/* FOOTER SECTION */
+.footer {
+  background-color: #e9e4dd;
+  color: #333;
+  padding: 3rem 1.5rem 1rem;
+  font-family: "Inter", sans-serif;
+}
+
+/* MEDIA QUERIES */
+
+/* For larger screens with a min width of 768px >, show menu normally */
 @media (min-width: 768px) {
+  /* HEADER NAV */
   .hamburger {
     display: none;
   }
 
   .menu {
     display: flex;
-    position: static; /* rejoin normal layout */
+    position: static;
     flex-direction: row;
     background: none;
     padding: 0;
   }
 
   .menu a {
+    padding: 0.5em 1em; /
+  }
+
+  .btn-nav-primary {
+    display: inline-block;
+    background-color: var(--primary-color);
     color: white;
-    padding: 0 1em;
+    padding: 0.8rem 2rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s ease;
+  }
+
+  /* FOOTER SECTION */
+  .footer-container {
+    text-align: center;
   }
 }
 
-/* MAIN BODY OF CONTENT */
-main {
-  /* background-color: red; */
-  flex: 1;
-}
+@media (min-width: 1024px) {
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
 
-footer {
-  background-color: #333;
-  color: white;
+  .hero-content p {
+    font-size: 1.2rem;
+  }
 }
