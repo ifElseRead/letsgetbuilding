@@ -27,8 +27,18 @@ flex-direction: column;
 min-height: 100vh;
 font-family: Arial, sans-serif;
 min-width: 320px;
+background-color: #f4f4f4;
 }
 
+.bg-color {
+background: linear-gradient(180deg, #f9f8f6 0%, #fff 100%);
+}
+
+.section-h2 {
+color: #ff6b35;
+font-size: 2rem;
+margin-bottom: 0.5rem;
+}
 
 /* HEADER SECTION */
 
@@ -120,11 +130,8 @@ display: flex;
 /* MAIN BODY OF CONTENT */
 main {
 flex: 1;
-/* max-width: 1380px; 
-margin: 0 auto; 
-width: 98%;  */
-/* for debugging only >> */
-/* border: 2px red solid;  */
+
+
 }
 
 
@@ -173,6 +180,148 @@ transition: background 0.3s ease;
 background-color: #ff4500;
 }
 
+/* CONTENT CARDS */
+
+.content-section {
+display: flex;
+flex-direction: column;
+gap: 40px;
+}
+
+.content-card {
+background-color: #ffffff;
+border-radius: 8px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+padding: 30px;
+display: flex;
+align-items: center;
+gap: 30px;
+flex-wrap: wrap; /* Allows sections to wrap on smaller screens */
+}
+
+.content-card:nth-child(even) {
+flex-direction: row-reverse; /* Alternates the image and text */
+}
+
+.content-text {
+flex: 1;
+}
+
+.content-text h3 {
+font-size: 1.8em;
+color: #34495e;
+margin-top: 0;
+padding-bottom: 1em;
+}
+
+.content-image {
+flex: 1;
+min-width: 150px; /* Prevents image from getting too small */
+width: 250px;
+text-align: center;
+}
+
+.content-image img {
+max-width: 100%;
+height: auto;
+border-radius: 8px;
+}
+
+
+/* PROCESS FLOW SECTION */
+.process-flow {
+text-align: center;
+padding: 4rem 1.5rem;
+background: linear-gradient(180deg, #f9f8f6 0%, #fff 100%);
+font-family: "Inter", sans-serif;
+}
+
+
+
+.process-flow .intro-text {
+color: #555;
+font-size: 1rem;
+max-width: 600px;
+margin: 0 auto 3rem;
+line-height: 1.6;
+}
+
+/* Grid Layout */
+.flow-grid {
+display: grid;
+grid-template-columns: 1fr;
+gap: 2rem;
+justify-items: center;
+}
+
+/* Flow Boxes */
+.flow-box {
+background: #fff;
+padding: 2rem 1.5rem;
+border-radius: 16px;
+width: 100%;
+max-width: 280px;
+box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.flow-box:hover {
+transform: translateY(-4px);
+box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Icons */
+.icon {
+font-size: 2.2rem;
+width: 60px;
+height: 60px;
+line-height: 60px;
+background: #ff6b35;
+color: #fff;
+border-radius: 50%;
+margin: 0 auto 1rem;
+}
+
+/* Text inside boxes */
+.flow-box h3 {
+font-size: 1.1rem;
+color: #222;
+margin-bottom: 0.5rem;
+}
+
+.flow-box p {
+color: #555;
+font-size: 0.95rem;
+line-height: 1.5;
+}
+
+/* Call to Action Section */
+.cta {
+text-align: center;
+background-color: #f4f4f4;
+padding: 4rem 1.5rem;
+}
+
+.cta p {
+color: #555;
+margin-bottom: 2rem;
+font-size: 1.1rem;
+}
+
+.btn-secondary {
+background-color: #333;
+color: white;
+padding: 0.8rem 2rem;
+border-radius: 30px;
+text-decoration: none;
+transition: background 0.3s ease;
+}
+
+.btn-secondary:hover {
+background-color: #ff6b35;
+}
+
+
 /* FOOTER SECTION */
 .footer {
 background-color: #e9e4dd;
@@ -180,6 +329,12 @@ color: #333;
 padding: 3rem 1.5rem 1rem;
 text-align: center
 
+}
+
+.footer-about, .footer-links, .footer-social {
+align-self: flex-start;
+justify-content: center;
+margin-bottom: 2rem;
 }
 
 .footer-container {
@@ -282,6 +437,33 @@ font-weight: 600;
 transition: background 0.3s ease;
 }
 
+/* HERO SECTION */
+.hero {
+background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)),
+url("../images/hero2.jpg") center/cover no-repeat;
+}
+
+.hero-content h1 {
+font-size: 2rem;
+}
+.hero-content p {
+font-size: 1rem;
+}
+
+/* CTA SECTION */
+.cta h2 {
+font-size: 1.5rem;
+}
+/* PROCESS FLOW SECTION */
+.flow-grid {
+grid-template-columns: repeat(2, 1fr);
+gap: 0.5rem;
+}
+
+.flow-box {
+max-width: 320px;
+}
+
 /* FOOTER SECTION */
 
 .footer {
@@ -299,10 +481,24 @@ align-items: center;
 
 @media (min-width: 1024px) {
 .hero-content h1 {
-font-size: 2.5rem;
+    font-size: 2.5rem;  
 }
 
 .hero-content p {
-font-size: 1.2rem;
+    font-size: 1.2rem;
+}
+
+.process-flow h2 {
+    font-size: 2.5rem;
+}
+
+.process-flow .intro-text {
+    font-size: 1.1rem;
+    max-width: 700px;
+}
+
+.flow-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
 }
 }
