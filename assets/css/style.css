@@ -394,7 +394,6 @@ main {
 
 /* --- CONTACT SECTION --- */
 .contact-section {
-  background: linear-gradient(180deg, #f9f8f6 0%, #fff 100%);
   padding: 4rem 1.5rem;
   max-width: 900px;
   margin: 0 auto 40px;
@@ -405,6 +404,12 @@ main {
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
   padding: 3rem;
+}
+
+.footer-text {
+  color: #555;
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
 }
 
 @media (max-width: 768px) {
@@ -496,11 +501,11 @@ textarea {
   padding: 3rem 2rem;
   border-radius: 12px;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-  max-width: 600px;
+  max-width: 900px;
   width: 100%;
   text-align: center;
   animation: fadeIn 0.8s ease-in-out;
-  margin: 4rem auto;
+  margin: 6rem auto;
 }
 
 .success-icon {
@@ -541,19 +546,6 @@ textarea {
 
 .success-btn:hover {
   background-color: #e45a25;
-}
-
-/* ABOUT  */
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(15px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 
 /*
