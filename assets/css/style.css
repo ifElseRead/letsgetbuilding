@@ -326,9 +326,224 @@ main {
   font-size: 1.1rem;
 }
 
+/*
+
+ PAGE SPECIFIC STYLES (About, Contact, Success)
+
+*/
+
+/* --- ABOUT PAGE STYLES --- */
+.about-section {
+  background: var(--secondary-color);
+  padding: 4rem 1.5rem;
+}
+
+.about-container {
+  max-width: 1380px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.about-text {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.about-text h2 {
+  color: var(--primary-color);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about-text p {
+  color: var(--font-color);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.about-details {
+  margin-top: 1rem;
+  color: #555;
+}
+
+.about-details strong {
+  color: var(--primary-color);
+}
+
+.map-container {
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  border: 3px solid #fff;
+  height: 350px;
+}
+
+.map-container iframe {
+  /* force the iframe to fill 
+     the 350px height and 100% width of the parent container. */
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* --- CONTACT SECTION --- */
+.contact-section {
+  background: linear-gradient(180deg, #f9f8f6 0%, #fff 100%);
+  padding: 4rem 1.5rem;
+  max-width: 900px;
+  margin: 0 auto 40px;
+}
+
+.contact-container {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  padding: 3rem;
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    padding: 2rem;
+  }
+}
+
+.contact-section h2 {
+  color: var(--primary-color);
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.subtitle {
+  text-align: center;
+  color: #555;
+  margin-bottom: 2.5rem;
+  font-size: 1.1rem;
+}
+
+/* FORM ELEMENTS */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+label {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--font-color);
+  margin-bottom: 0.3rem;
+  display: block;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  background-color: #fff;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.3);
+  outline: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #aaa;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.submit-btn {
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  padding: 0.9rem 1.5rem;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.submit-btn:hover {
+  background-color: #ff4500;
+}
+
+.submit-btn:active {
+  transform: scale(0.98);
+}
+
+/* --- SUCCESS PAGE STYLES --- */
+.success-container {
+  background: #fff;
+  padding: 3rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+  animation: fadeIn 0.8s ease-in-out;
+  margin: 4rem auto;
+}
+
+.success-icon {
+  font-size: 3rem;
+  color: var(--primary-color);
+  background: rgba(255, 107, 53, 0.1);
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+}
+
+.success-container h1 {
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.success-container p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.success-btn {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: #fff;
+  text-decoration: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.success-btn:hover {
+  background-color: #e45a25;
+}
+
 /* ABOUT  */
-
-
 
 @keyframes fadeIn {
   from {
@@ -480,7 +695,9 @@ main {
     font-size: 1rem;
   }
 
- /* OVERRIDE  */
+  .about-text h2 {
+    font-size: 2.3rem;
+  }
 
   /* CTA SECTION */
   .cta h2 {
@@ -532,5 +749,10 @@ main {
   .flow-grid {
     grid-template-columns: repeat(4, 1fr);
     gap: 3rem;
+  }
+  /* About Section override */
+  .about-container {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
   }
 }
