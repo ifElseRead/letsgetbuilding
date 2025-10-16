@@ -140,6 +140,22 @@ The following external resources and techniques were integral to the project's d
 
 ---
 
+---
+
+## 🤖 AI Assistance
+
+To streamline the content creation process and focus development efforts on structure and design, **Generative AI** was utilized for drafting the preliminary text across all pages.
+
+### How AI was Used
+
+- **Initial Drafts:** AI was employed to generate the initial drafts of descriptive text for the Home, About, and Contact pages, as well as the meta descriptions and keywords.
+- **Tone & Style:** The output was guided by prompts specifying a **professional, accessible, and educational** tone.
+- **Editing:** All AI-generated content was thoroughly **reviewed, edited, and validated by the developer** to ensure accuracy, relevance to the project's objectives, and consistent brand voice.
+
+This approach allowed for rapid prototyping of the site's content while maintaining final quality control by the site owner.
+
+---
+
 <p>
     <a href="https://jigsaw.w3.org/css-validator/check/referer">
         <img style="border:0;width:88px;height:31px"
