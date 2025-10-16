@@ -748,3 +748,32 @@ textarea {
     align-items: start;
   }
 }
+
+/* 404 ERROR PAGE  */
+
+.error-code {
+  font-size: 6rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.home-button {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: #fff;
+  text-decoration: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+.home-button:hover {
+  background-color: #e45a25;
+}
+
+.small-text {
+  font-size: 0.9rem;
+  color: #ddd;
+  margin-top: 1rem;
+}
