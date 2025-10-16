@@ -125,6 +125,12 @@ All internal and external links were tested to ensure they direct the user to th
 
 ---
 
+## 🔗 Issue with sections of the website
+
+| Page / Element                  | Issue                                | Solution                                                 | Status |
+| :------------------------------ | :----------------------------------- | :------------------------------------------------------- | :----- |
+| SVG icons inFooter on all pages | Hover wouldn't work or change colour | FIX add fill to the SVG with the value of > currentColor | Pass   |
+
 ### 📝 Note on New Tabs
 
 To ensure an external link opens in a new tab, the HTML code for the anchor tag must include the attribute `target="_blank"`, for example: `<a href="external-link" target="_blank">...</a>`.
@@ -138,7 +144,8 @@ The following external resources and techniques were integral to the project's d
 - **Responsive Menu (CSS Checkbox Hack):** The pure CSS navigation toggle was implemented using the "checkbox hack" technique.
   - [CSS-Tricks: The Checkbox Hack](https://css-tricks.com/the-checkbox-hack/)
 
----
+* **SVG Icons:** Icons used throughout the site were sourced and customized from this library.
+  - [iconsvg.xyz](https://iconsvg.xyz/)
 
 ---
 
