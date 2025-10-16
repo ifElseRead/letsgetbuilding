@@ -129,6 +129,17 @@ All internal and external links were tested to ensure they direct the user to th
 
 To ensure an external link opens in a new tab, the HTML code for the anchor tag must include the attribute `target="_blank"`, for example: `<a href="external-link" target="_blank">...</a>`.
 
+---
+
+## 📚 Implementation References
+
+The following external resources and techniques were integral to the project's development, specifically for achieving core functionality without relying on JavaScript:
+
+- **Responsive Menu (CSS Checkbox Hack):** The pure CSS navigation toggle was implemented using the "checkbox hack" technique.
+  - [CSS-Tricks: The Checkbox Hack](https://css-tricks.com/the-checkbox-hack/)
+
+---
+
 <p>
     <a href="https://jigsaw.w3.org/css-validator/check/referer">
         <img style="border:0;width:88px;height:31px"
