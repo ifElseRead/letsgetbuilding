@@ -5,7 +5,7 @@
 */
 
 :root {
-  --primary-color: rgb(255, 172, 28);
+  --primary-color: rgb(216, 139, 6);
   --secondary-color: #f4f4f4;
   --font-color: rgb(44, 41, 41);
   --header-height: 60px;
@@ -24,6 +24,13 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+.outlined-text {
+  color: white; /* Color of the text fill */
+  text-shadow: -1px -1px 0 #000, /* Top-Left offset */ 1px -1px 0 #000,
+    /* Top-Right offset */ -1px 1px 0 #000,
+    /* Bottom-Left offset */ 1px 1px 0 #000; /* Bottom-Right offset */
 }
 
 body {
@@ -162,13 +169,11 @@ a:visited {
 }
 
 .menu .btn-nav-primary {
-  color: var(--font-color);
+  color: white;
   text-decoration: none;
   padding: 1em 0;
   transition: opacity 0.2s ease-in-out, border-bottom 0.2s ease-in-out;
   border-bottom: 2px solid transparent;
-  padding: 0.8rem 2rem;
-  border-radius: 30px;
 }
 
 .menu a:hover,
@@ -674,7 +679,7 @@ textarea {
   .menu a {
     padding: 0.5em 1em;
   }
-  .btn-nav-primary {
+  .menu .btn-nav-primary {
     display: inline-block;
     background-color: var(--primary-color);
     color: var(--font-color);
@@ -683,7 +688,7 @@ textarea {
     text-decoration: none;
     font-weight: 600;
     transition: background 0.3s ease;
-    margin-left: 1rem; /* Added margin for separation */
+    margin-left: 1rem;
   }
 
   /* HERO SECTION */
@@ -764,17 +769,23 @@ textarea {
 
 /* 404 ERROR PAGE  */
 
-.error-code {
+#error-code {
   font-size: 6rem;
   color: var(--primary-color);
   margin-bottom: 1rem;
   font-weight: bold;
 }
 
+#main-heading {
+  font-size: 2rem;
+  color: var(--font-color);
+  margin-bottom: 1rem;
+}
+
 .home-button {
   display: inline-block;
   background-color: var(--primary-color);
-  color: #fff;
+  color: var(--font-color);
   text-decoration: none;
   padding: 0.75rem 1.5rem;
   border-radius: 8px;
