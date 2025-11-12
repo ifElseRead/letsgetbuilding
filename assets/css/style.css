@@ -5,11 +5,11 @@
 */
 
 :root {
-  --primary-color: #ff6b35;
+  --primary-color: rgb(255, 172, 28);
   --secondary-color: #f4f4f4;
-  --font-color: #333;
+  --font-color: rgb(44, 41, 41);
   --header-height: 60px;
-  --impact-font: "Courier New", Courier, monospace;
+  --impact-font: 'Courier New', Courier, monospace;
 }
 
 /*
@@ -47,7 +47,7 @@ body {
 }
 
 .section-h2 {
-  color: var(--primary-color);
+  color: var(--font-color);
   font-size: 2rem;
   margin-bottom: 0.5rem;
 }
@@ -57,7 +57,7 @@ body {
 .btn-primary {
   display: inline-block;
   background-color: var(--primary-color);
-  color: white;
+  color: var(--font-color);
   padding: 0.8rem 2rem;
   border-radius: 30px;
   text-decoration: none;
@@ -71,7 +71,7 @@ body {
 
 .btn-secondary {
   background-color: #333;
-  color: white;
+  color: var(--font-color);
   padding: 0.8rem 2rem;
   border-radius: 30px;
   text-decoration: none;
@@ -90,7 +90,7 @@ body {
 
 header {
   color: white;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5em);
   background-color: #3a3a3a;
 }
 
@@ -100,6 +100,7 @@ nav {
   color: white;
   padding: 2rem;
   display: flex;
+  font-size: 1.1em;
   justify-content: space-between;
   align-items: center;
   position: relative;
@@ -117,6 +118,7 @@ a,
 a:visited {
   color: white;
   text-decoration: none;
+  font-weight: bold;
 }
 
 /* Mobile Menu Toggle */
@@ -151,20 +153,27 @@ a:visited {
 }
 
 /* Menu Links */
-.menu a,
-.btn-nav-primary {
+.menu a {
   color: white;
   text-decoration: none;
   padding: 1em 0;
-  opacity: 1;
   transition: opacity 0.2s ease-in-out, border-bottom 0.2s ease-in-out;
   border-bottom: 2px solid transparent;
 }
 
+.menu .btn-nav-primary {
+  color: var(--font-color);
+  text-decoration: none;
+  padding: 1em 0;
+  transition: opacity 0.2s ease-in-out, border-bottom 0.2s ease-in-out;
+  border-bottom: 2px solid transparent;
+  padding: 0.8rem 2rem;
+  border-radius: 30px;
+}
+
 .menu a:hover,
 .btn-nav-primary:hover {
-  opacity: 0.85;
-  border-bottom: 2px solid var(--primary-color, #4caf50);
+  border-bottom: 2px solid var(--primary-color, #af894c);
 }
 .menu a.active {
   color: var(--primary-color);
@@ -189,8 +198,7 @@ main {
   justify-content: center;
   text-align: center;
   height: 70vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)),
-    url("../images/small-hero2.jpg") center/cover no-repeat;
+  background: url('../images/small-hero2.jpg') center/cover no-repeat;
   color: white;
   padding: 0 1.5rem;
 }
@@ -265,7 +273,7 @@ main {
   text-align: center;
   padding: 3rem 1.5rem;
   background: #f9f8f6;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 .process-flow .intro-text {
@@ -393,7 +401,7 @@ main {
 }
 
 .map-container iframe {
-  /* force the iframe to fill 
+  /* force the iframe to fill
      the 350px height and 100% width of the parent container. */
   width: 100%;
   height: 100%;
@@ -418,12 +426,6 @@ main {
   color: #555;
   margin-top: 1.5rem;
   font-size: 0.9rem;
-}
-
-@media (max-width: 768px) {
-  .contact-container {
-    padding: 2rem;
-  }
 }
 
 .contact-section h2 {
@@ -455,8 +457,8 @@ label {
   display: block;
 }
 
-input[type="text"],
-input[type="email"],
+input[type='text'],
+input[type='email'],
 textarea {
   width: 100%;
   padding: 0.75rem 1rem;
@@ -585,7 +587,7 @@ textarea {
 }
 
 .footer-about h3 {
-  color: var(--primary-color);
+  color: var(--font-color);
   font-size: 1.4rem;
   margin-bottom: 0.5rem;
 }
@@ -657,6 +659,10 @@ textarea {
     display: none;
   }
 
+  .contact-container {
+    padding: 2rem;
+  }
+
   .menu {
     display: flex;
     position: static;
@@ -668,11 +674,10 @@ textarea {
   .menu a {
     padding: 0.5em 1em;
   }
-
   .btn-nav-primary {
     display: inline-block;
     background-color: var(--primary-color);
-    color: white;
+    color: var(--font-color);
     padding: 0.8rem 2rem;
     border-radius: 30px;
     text-decoration: none;
@@ -684,7 +689,7 @@ textarea {
   /* HERO SECTION */
   .hero {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)),
-      url("../images/hero2.jpg") center/cover no-repeat;
+      url('../images/hero2.jpg') center/cover no-repeat;
   }
 
   .hero-content h1 {
