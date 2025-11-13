@@ -162,11 +162,20 @@ The custom HTML and CSS code must pass through official W3C validation tools wit
 
 Performance testing was conducted using **Google Lighthouse** to assess and ensure the application provides a fast, accessible, and high-quality user experience.
 
-|                                       Page Screenshot                                        |              Lighthouse Score Image               |
-| :------------------------------------------------------------------------------------------: | :-----------------------------------------------: |
-| <img src="assets/projectImages/indexhero.png" alt="Image of homepage" width="600"> | <img src="assets/projectImages/lh-indexpage.png"> |
+|        Page        |                                                 Page Screenshot                                                 |              Lighthouse Score Image               |
+| :----------------: | :-------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------: |
+|     Index.html     |               <img src="assets/projectImages/indexhero.png" alt="Image of homepage" width="600">                | <img src="assets/projectImages/lh-indexpage.png"> |
+|                    |            <img src="assets/projectImages/indexiconblocks.png" alt="Image of homepage" width="600">             |                                                   |
+|                    |             <img src="assets/projectImages/indexsections.png" alt="Image of homepage" width="600">              |                                                   |
+|                    |              <img src="assets/projectImages/indexfooter.png" alt="Image of homepage" width="600">               |                                                   |
+|    AboutUs.html    |              <img src="assets/projectImages/aboutus.png" alt="Image of about us page" width="600">              |  <img src="assets/projectImages/lh-aboutus.png">  |
+|    Contact.html    |           <img src="assets/projectImages/contactname.png" alt="Image of contact us page" width="600">           |  <img src="assets/projectImages/lh-contact.png">  |
+| Contact validation |      <img src="assets/projectImages/contactusemail.png" alt="Image of contact for validation" width="600">      |                                                   |
+|                    |           <img src="assets/projectImages/contactusmessage.png" alt="Image of contact for validation"            |                                                   |
+|  Contact Success   | <img src="assets/projectImages/contactusvalidationmessage.png" alt="Image of contact success page" width="600"> |  <img src="assets/projectImages/lh-contact.png">  |
+|  404 custom error  |        <img src="assets/projectImages/contactname.png" alt="Image of 404 custom error page" width="600">        |  <img src="assets/projectImages/lh-404page.png">  |
 
-**Key Findings:** _[Placeholder: Briefly summarize the key outcome here, e.g., "The site achieved high scores across all categories, reflecting the project's focus on semantic code and efficient asset loading."]_
+**Key Findings:** \_[Placeholder: Briefly summarize the key outcome here, e.g., "The site achieved high scores across all categories, but there was an issue with the contrast on the colour scheme. I let is as it is because the colours work for the branding
 
 ---
 
@@ -307,21 +316,3 @@ To streamline the content creation process and focus development efforts on stru
 This approach allowed for rapid prototyping of the site's content while maintaining final quality control by the site owner.
 
 ---
-
-<p>
-    <a href="https://jigsaw.w3.org/css-validator/check/referer">
-        <img style="border:0;width:88px;height:31px"
-            src="https://jigsaw.w3.org/css-validator/images/vcss"
-            alt="Valid CSS!" />
-    </a>
-</p>
-
-Valid CSS!
-
-<p>
-    <a href="https://jigsaw.w3.org/css-validator/check/referer">
-        <img style="border:0;width:88px;height:31px"
-            src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
-            alt="Valid CSS!" />
-    </a>
-</p>
