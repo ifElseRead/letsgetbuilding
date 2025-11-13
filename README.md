@@ -164,7 +164,7 @@ Performance testing was conducted using **Google Lighthouse** to assess and ensu
 
 |                                       Page Screenshot                                        |              Lighthouse Score Image               |
 | :------------------------------------------------------------------------------------------: | :-----------------------------------------------: |
-| <img src="assets/wireframesprojectImages/indexhero.png" alt="Image of homepage" width="600"> | <img src="assets/projectImages/lh-indexpage.png"> |
+| <img src="assets/projectImages/indexhero.png" alt="Image of homepage" width="600"> | <img src="assets/projectImages/lh-indexpage.png"> |
 
 **Key Findings:** _[Placeholder: Briefly summarize the key outcome here, e.g., "The site achieved high scores across all categories, reflecting the project's focus on semantic code and efficient asset loading."]_
 
