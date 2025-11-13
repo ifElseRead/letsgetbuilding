@@ -97,7 +97,7 @@ body {
 
 header {
   color: white;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5em);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0);
   background-color: #3a3a3a;
 }
 
