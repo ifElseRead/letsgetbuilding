@@ -136,7 +136,7 @@ A key technical feature is the clean, collapsible navigation menu, which is powe
 <img src="assets/projectImages/fullnav.png" alt="picture of full length navigation menu">
 
 <img src="assets/projectImages/hamburgernav.png" alt="picture of navigation menu at mobile breakpoint at the hamburger showing" >
-<img src="assets/projectImages/mobilenavopen.png" alt="picture of navigation menu at mobile fully open">
+<img src="assets/projectImages/mobilenavopen.png" alt="picture of navigation menu at mobile fully open" >
 
 ---
 
@@ -148,10 +148,13 @@ To ensure the highest quality and validate the project against all required crit
 
 The custom HTML and CSS code must pass through official W3C validation tools without any errors or warnings. This verifies compliance with accessibility and structural standards.
 
-| Code     | Validator Used                | Status   | Report Evidence                              |
-| :------- | :---------------------------- | :------- | :------------------------------------------- |
-| **HTML** | W3C Markup Validation Service | **PASS** | [Link to saved W3C HTML Validation Report]   |
-| **CSS**  | W3C Jigsaw CSS Validator      | **PASS** | [Link to saved Jigsaw CSS Validation Report] |
+| Code     | Validator Used                | Status   | Report Evidence                                                                   |
+| :------- | :---------------------------- | :------- | :-------------------------------------------------------------------------------- |
+| **HTML** | W3C Markup Validation Service | **PASS** | <img src="assets/projectImages/validhtml5.png" alt="picture of validated html5" > |
+|          |
+| **CSS**  | W3C Jigsaw CSS Validator      | **PASS** | <img src="assets/projectImages/validcss.png" alt="picture of validated CSS" >     |
+
+|
 
 ---
 
@@ -159,9 +162,9 @@ The custom HTML and CSS code must pass through official W3C validation tools wit
 
 Performance testing was conducted using **Google Lighthouse** to assess and ensure the application provides a fast, accessible, and high-quality user experience.
 
-|                                              Page Screenshot                                              |              Lighthouse Score Image               |
-| :-------------------------------------------------------------------------------------------------------: | :-----------------------------------------------: |
-| <img src="assets/wireframes/indexhero.png" alt="Wireframe for the view of the main homepage" width="400"> | <img src="assets/projectImages/lh-indexpage.png"> |
+|                                       Page Screenshot                                        |              Lighthouse Score Image               |
+| :------------------------------------------------------------------------------------------: | :-----------------------------------------------: |
+| <img src="assets/wireframesprojectImages/indexhero.png" alt="Image of homepage" width="600"> | <img src="assets/projectImages/lh-indexpage.png"> |
 
 **Key Findings:** _[Placeholder: Briefly summarize the key outcome here, e.g., "The site achieved high scores across all categories, reflecting the project's focus on semantic code and efficient asset loading."]_
 
