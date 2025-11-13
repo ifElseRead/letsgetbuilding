@@ -133,10 +133,10 @@ A key technical feature is the clean, collapsible navigation menu, which is powe
 3.  **CSS Logic (State-Driven Display):** CSS rules target the navigation menu using the adjacent sibling combinator (`+`) and the `:checked` pseudo-class. When the checkbox's state is `:checked` (meaning the icon has been tapped), the CSS displays the navigation menu.
 4.  **Result:** This technique delivers a fully functional, collapsible menu on mobile devices while avoiding any reliance on JavaScript.
 
-<img src="assets/projectImages/fullnav.png" alt="picture of full length navigation menu" width="400">
+<img src="assets/projectImages/fullnav.png" alt="picture of full length navigation menu">
 
-<img src="assets/projectImages/hamburgernav.png" alt="picture of navigation menu at mobile breakpoint at the hamburger showing" width="400">
-<img src="assets/projectImages/mobilenavopen.png" alt="picture of navigation menu at mobile fully open" width="400">
+<img src="assets/projectImages/hamburgernav.png" alt="picture of navigation menu at mobile breakpoint at the hamburger showing" >
+<img src="assets/projectImages/mobilenavopen.png" alt="picture of navigation menu at mobile fully open">
 
 ---
 
